@@ -39,10 +39,19 @@
 		numpad {
 			bindings = <
 				&to 0 &none   &none &none &none &none &none &none &none &none &none &none &none &kp BSPC
-				&none &none &none &none &none &none &none &kp N7 &kp N8 &kp N9 &none &none &none &none
-				&to 0   &none &none &none &none &none &kp PLUS &kp N4 &kp N5 &kp N6 &kp KP_MULTIPLY &none   &bootloader
+				&bootloader &none &none &none &none &none &none &kp N7 &kp N8 &kp N9 &none &none &none &none
+				&to 0   &none &none &none &none &none &kp PLUS &kp N4 &kp N5 &kp N6 &kp KP_MULTIPLY &none   &kb RET
 				&none    &none &none &none &none &none &kp MINUS &kp N1 &kp N2 &kp N3 &kp FSLH    &none
-				&none &none &none                   &kp N0                     &kp DOT &none &none &to 0
+				&to 3 &none &none                   &kp N0                     &kp DOT &none &none &to 0
+			>;
+		};
+		numpad {
+			bindings = <
+				&to 0 &none   &none &none &none &none &none &none &none &none &none &none &none &none
+				&bootloader &bl BL_INC &bl BL_DEC &bl BL_TOG &none &none &none &none &none &none &none &none &none &none
+				&to 0   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD &none &none &none &none &none &none &none &none &none   &none
+				&none    &rgb_ug RGB_HUI  &rgb_ug RGB_HUD &none &none &none &none &none &none &none &none    &none
+				&to 0 &none &none                   &kp N0                     &none &none &none &to 0
 			>;
 		};
 	};
