@@ -29,7 +29,7 @@
 		raise {
 			bindings = <
 				&reset &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL
-				&none &none &kp UP &none &none &none &none &none &kp INS &none &kp PSCRN &kp SLCK &kp PAUSE_BREAK &rgb_ug RGB_TOG
+				&none &none &kp UP &none &none &none &none &none &kp INS &none &kp PSCRN &kp SLCK &kp PAUSE_BREAK &none
 				&kp CAPS    &kp LEFT &kp DOWN &kp RIGHT &none &none &none &none &none &none &kp HOME  &kp PG_UP   &bootloader
 				&kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &bl BL_INC &bl BL_DEC &none &none &none &kp END &kp PG_DN  &bl BL_TOG
 				&bt BT_SEL 0 &bt BT_SEL 1  &none              &none                            &none   &none   &none &none
@@ -39,7 +39,7 @@
 		numpad {
 			bindings = <
 				&to 0 &none   &none &none &none &none &none &none &none &none &none &none &none &kp BSPC
-				&bootloader &none &none &none &none &none &none &kp N7 &kp N8 &kp N9 &none &none &none &none
+				&none &none &none &none &none &none &none &kp N7 &kp N8 &kp N9 &none &none &none &bootloader
 				&to 0   &none &none &none &none &none &kp PLUS &kp N4 &kp N5 &kp N6 &kp KP_MULTIPLY &none   &kp RET
 				&none    &none &none &none &none &none &kp MINUS &kp N1 &kp N2 &kp N3 &kp FSLH    &none
 				&to 0 &none &none                   &kp N0                     &kp DOT &none &none &to 0
@@ -47,11 +47,11 @@
 		};
 		functions {
 			bindings = <
-				&to 0 &none   &bl BL_HUI &bl BL_HUD &none &none &none &none &none &none &none &none &none &none
-				&bootloader &bl BL_INC &bl BL_DEC &bl BL_TOG &none &none &none &none &none &none &none &none &none &none
-				&to 0   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD &none &none &none &none &none &none &none &none &none   &none
-				&none    &rgb_ug RGB_HUI  &rgb_ug RGB_HUD &none &none &none &none &none &none &none &none    &none
-				&to 0 &none &none                   &kp N0                     &none &none &none &to 0
+				&to 0 &none   &none &none &none &none &none &none &none &none &none &none &none &none
+				&none &bl BL_INC &bl BL_DEC &bl BL_TOG &none &none &none &none &none &none &none &none &none &bootloader
+				&to 0   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD &rgb_ug RGB_TOG &none &none &none &none &none &none &none &none   &none
+				&none    &rgb_ug RGB_HUI  &rgb_ug RGB_HUD &rgb_ug RGB_TOG &none &none &none &none &none &none &none    &none
+				&to 0 &none &none                   &none                     &none &none &none &to 0
 			>;
 		};
 	};
