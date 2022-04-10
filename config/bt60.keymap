@@ -23,7 +23,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <100>;
-            bindings = <&to>, <&kp>;
+            bindings = <&mo>, <&kp>;
             // hold-trigger-key-positions = <1>;    // <---[[the W key]]
         };
     };
